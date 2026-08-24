@@ -469,4 +469,4 @@ For support or requests for this actor, please start a ticket [directly on our s
 
 *Use the Agoda Hotel API to power your rate monitoring, travel research, and hotel reviews workflows with reliable, structured results.*
 
-Last Updated: 2026.08.23
+Last Updated: 2026.08.24
