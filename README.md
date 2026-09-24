@@ -281,6 +281,17 @@ A real review row from a reviews run:
 
 Notes on reading the output. Fields are omitted rather than set to null when the source has nothing, so use `.get()` in Python and expect gaps rather than assuming every key is present. On a property row, `checkIn` and `checkOut` are the stay window the source quoted these offers for, and each offer carries its own `nights` count, so read `nights` when you need the length of stay a price applies to. `whatsNearby`, `walkablePlaces`, `amenities`, and `faq` arrive as lists of `{name, value}` groups rather than flat lists of strings. On a review row, `reviewPositive`, `reviewNegative`, and `ownerReply` appear only where the source splits the review that way or the property replied, and plenty of reviews carry none of the three, so treat them as optional and lean on `rating`, `reviewDate`, and `nightsStayed` for anything you need on every row. An input that returns nothing produces a row with `result_type` of `error` and a readable `error_message`, which is also what you get if a single property's pages are temporarily unreadable while the rest of the batch succeeds.
 
+<!-- ask-ai:start -->
+## 🤖 Ask an AI assistant about this Actor
+
+Open a ready-to-send prompt about the Agoda Hotel API in the AI of your choice:
+
+- 💬 [ChatGPT](https://chatgpt.com/?q=Using%20the%20Agoda%20Hotel%20API%20on%20Apify%20%28https://apify.com/johnvc/agoda-hotel-api?fpr=9n7kx3%29%2C%20walk%20me%20through%20this%20use%20case:%20%22Get%20Agoda%20hotel%20rates%20as%20JSON%20without%20an%20API%20key%22.%20Show%20me%20the%20input%20JSON%2C%20the%20output%20fields%2C%20and%20how%20to%20automate%20it%20with%20the%20API%20or%20MCP.)
+- 🧠 [Claude](https://claude.ai/new?q=Using%20the%20Agoda%20Hotel%20API%20on%20Apify%20%28https://apify.com/johnvc/agoda-hotel-api?fpr=9n7kx3%29%2C%20walk%20me%20through%20this%20use%20case:%20%22Get%20Agoda%20hotel%20rates%20as%20JSON%20without%20an%20API%20key%22.%20Show%20me%20the%20input%20JSON%2C%20the%20output%20fields%2C%20and%20how%20to%20automate%20it%20with%20the%20API%20or%20MCP.)
+- 🔍 [Perplexity](https://www.perplexity.ai/search?q=Using%20the%20Agoda%20Hotel%20API%20on%20Apify%20%28https://apify.com/johnvc/agoda-hotel-api?fpr=9n7kx3%29%2C%20walk%20me%20through%20this%20use%20case:%20%22Get%20Agoda%20hotel%20rates%20as%20JSON%20without%20an%20API%20key%22.%20Show%20me%20the%20input%20JSON%2C%20the%20output%20fields%2C%20and%20how%20to%20automate%20it%20with%20the%20API%20or%20MCP.)
+- 🅒 [Copilot](https://copilot.microsoft.com/?q=Using%20the%20Agoda%20Hotel%20API%20on%20Apify%20%28https://apify.com/johnvc/agoda-hotel-api?fpr=9n7kx3%29%2C%20walk%20me%20through%20this%20use%20case:%20%22Get%20Agoda%20hotel%20rates%20as%20JSON%20without%20an%20API%20key%22.%20Show%20me%20the%20input%20JSON%2C%20the%20output%20fields%2C%20and%20how%20to%20automate%20it%20with%20the%20API%20or%20MCP.)
+<!-- ask-ai:end -->
+
 ## People also search for
 
 ### Is this an Agoda scraper or an API?
